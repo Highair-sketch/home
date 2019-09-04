@@ -6,6 +6,10 @@
     width: 100vw;
 }
 
+.top {
+    height: 1px;
+}
+
 @media only screen and (min-height: 1300px) {
     .page {
         height: 70vh;
