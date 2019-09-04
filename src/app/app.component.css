@@ -1,3 +1,18 @@
+@font-face {
+    font-family: MontserratRegular;
+    src: url("../assets/font/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url("../assets/font/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url("../assets/font/Montserrat-Light.ttf") format("truetype");
+}
+
 :root {
     --bgcolorLight: #ee5d6c;
     --bgcolorMedium: #ce4993;
