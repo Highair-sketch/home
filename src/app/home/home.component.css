@@ -1,0 +1,405 @@
+.page {
+    padding-top: 16px;
+    height: 100vh;
+    position: relative;
+    z-index: 1000;
+    width: 100vw;
+}
+
+@media only screen and (min-height: 1300px) {
+    .page {
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-height: 1200px) and (min-height: 1000px) {
+    .page {
+        height: 80vh;
+    }
+}
+
+@media only screen and (max-height: 1000px) and (min-height: 900px) {
+    .page {
+        height: 90vh;
+    }
+}
+
+@media only screen and (min-height: 800px) {
+    .panelContainer {
+        position: relative;
+    }
+    .panel {
+        padding-top: 16px;
+        margin-top: 5vh;
+        height: 400px;
+        font-size: var(--s4);
+    }
+    .panel .pro {
+        padding: 16px;
+    }
+    #custom .section {
+        margin-top: 32px;
+    }
+    #custom .section img {
+        float: left;
+        margin: auto;
+        margin-top: 32px;
+        width: 64px;
+        height: 64px;
+    }
+}
+
+@media only screen and (min-height: 600px) and (max-height: 800px) {
+    .panelContainer {
+        position: relative;
+    }
+    .panel {
+        padding-top: 16px;
+        margin-top: 5vh;
+        height: 340px;
+        font-size: var(--s4);
+    }
+    .panel .pro {
+        padding: 16px;
+    }
+    #custom .section {
+        margin-top: 32px;
+    }
+    #custom .section img {
+        float: left;
+        margin: auto;
+        margin-top: 32px;
+        width: 64px;
+        height: 64px;
+    }
+}
+
+@media only screen and (min-height: 500px) and (max-height: 600px) {
+    .panelContainer {
+        position: relative;
+    }
+    .panel {
+        padding-top: 16px;
+        margin-top: 5vh;
+        height: 230px;
+        font-size: var(--s4);
+    }
+    .panel .pro {
+        padding: 16px;
+    }
+    #custom .section {
+        margin-top: 32px;
+    }
+    #custom .section img {
+        float: left;
+        margin: auto;
+        margin-top: 32px;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media only screen and (min-height: 400px) and (max-height: 500px) {
+    .panelContainer {
+        position: relative;
+    }
+    .panel {
+        padding-top: 16px;
+        margin-top: 5vh;
+        height: 200px;
+        font-size: var(--s4);
+    }
+    .panel .pro {
+        padding: 16px;
+    }
+    #custom .section {
+        margin-top: 16px;
+    }
+    #custom .section img {
+        float: left;
+        margin: auto;
+        margin-top: 16px;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .panelContainer {
+        position: relative;
+    }
+    .panel {
+        padding-top: 8px;
+        margin-top: 5vh;
+        height: 170px;
+        font-size: var(--s4);
+    }
+    .panel .pro {
+        padding: 8px;
+    }
+    #custom .section {
+        margin-top: 4px;
+    }
+    #custom .section img {
+        float: left;
+        margin: auto;
+        margin-top: 8px;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .primary {
+        position: relative;
+        width: 50%;
+        float: left;
+    }
+    .panelContainer {
+        position: relative;
+        width: 50%;
+        height: 90%;
+        float: right;
+    }
+    .panel {
+        position: relative;
+        margin: auto;
+        margin-top: 5vh;
+        width: 350px;
+        font-size: var(--s4);
+    }
+    .panel .pro {
+        font-family: MontserratRegular;
+        font-size: var(--s3);
+    }
+    .footer {
+        bottom: 10vh;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+    .panelContainer {
+        position: relative;
+    }
+    .panel {
+        width: 350px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: var(--s4);
+    }
+    .panel .pro {
+        font-size: var(--s3);
+    }
+    .footer {
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    .panelContainer {
+        position: relative;
+    }
+    .panel {
+        position: relative;
+        width: 350px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: var(--s4);
+    }
+    .panel .pro {
+        font-size: var(--s3);
+    }
+    .footer {
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .panelContainer {
+        position: relative;
+    }
+    .panel {
+        position: relative;
+        width: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: var(--s4);
+    }
+    .panel .pro {
+        font-size: var(--s3);
+    }
+    .footer {
+        margin-top: 8px;
+    }
+}
+
+.divider {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.footer {
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.secPrimaryTxt {
+    color: var(--primary);
+    font-family: MontserratBold;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: var(--s5);
+    text-align: left;
+}
+
+.secSecondaryTxt {
+    margin-left: 10vw;
+    margin-top: 5vh;
+    font-size: var(--s4);
+    color: var(--primary);
+    font-family: MontserratBold;
+    text-align: left;
+}
+
+#presentazione {
+    position: fixed;
+    z-index: 0;
+}
+
+#presentazione #cv {
+    margin-right: 20px;
+    color: var(--primary);
+    font-family: MontserratBold;
+    font-size: var(--s4);
+    float: right;
+    border-radius: 1vh;
+}
+
+#presentazione #title {
+    margin-left: 8px;
+    float: left;
+    color: var(--primary);
+    font-family: MontserratLight;
+    font-size: var(--s4);
+}
+
+#presentazione .footer {
+    bottom: 10vh;
+}
+
+#website {
+    margin-top: 100vh;
+    border-radius: 4vh 4vh 0% 0%;
+    background-image: linear-gradient(var(--bgcolorDark), var(--bgcolorMedium));
+}
+
+#app {
+    background-color: var(--bgcolorMedium);
+}
+
+#custom {
+    background-image: linear-gradient(var(--bgcolorMedium), var(--bgcolorLight));
+}
+
+#custom .section {
+    position: relative;
+    display: flex;
+}
+
+#custom .section img {
+    float: left;
+    margin: auto;
+}
+
+#contatti {
+    background-color: var(--primary);
+    height: 45vh;
+    max-height: 450px;
+}
+
+#contatti .secPrimaryTxt {
+    color: var(--bgcolorDark);
+    margin-top: 2vh;
+}
+
+#contatti .sec {
+    width: 50%;
+    padding-top: 8px;
+    float: left;
+    font-size: var(--s4);
+}
+
+#contatti .secHeader {
+    margin-left: 10vw;
+    color: var(--bgcolorMedium);
+    font-family: MontserratBold
+}
+
+#contatti .secBody {
+    margin-left: 10vw;
+    color: black;
+    font-family: MontserratLight
+}
+
+#contatti a {
+    color: black;
+    text-decoration: none;
+}
+
+.panel {
+    border-radius: 16px;
+    font-family: MontserratBold;
+    color: var(--primary);
+    border: 2px solid white;
+    text-align: center;
+}
+
+.panel .pro {
+    overflow: auto;
+    text-align: left;
+}
+
+.panel .pro img {
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin-right: 8px;
+}
+
+.panel .pro .text {
+    width: auto;
+    float: right;
+    text-align: left;
+}
+
+.more {
+    border: 2px solid var(--primary);
+    border-radius: 16px;
+    color: var(--primary);
+    font-size: var(--s3);
+    padding-right: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    bottom: 2px;
+    width: 150px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.more:hover {
+    width: 130px;
+}

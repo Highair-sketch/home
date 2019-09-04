@@ -1,0 +1,163 @@
+<html>
+<div style="height: 0.01px"></div>
+<div class="page" id="presentazione" #presentazioneRef>
+    <div class="header">
+        <div id="title" [@slide]="fadeInStates[0]">
+            {{titolo}}
+        </div>
+        <div id="cv" [@slide]="fadeInStates[4]" (click)="curriculum()">
+            {{cv[this.l]}}
+        </div>
+    </div>
+    <div class="secPrimaryTxt" [@slide]="fadeInStates[1]">
+        {{presentazione}}
+    </div>
+    <div class="secSecondaryTxt" [@slide]="fadeInStates[2]">
+        <div>
+            {{presentazione2}}
+            <br> {{presentazione3}}
+        </div>
+    </div>
+    <div class="footer" (click)="goDown()" [@slide]="fadeInStates[3]" [ngx-scroll-to]="websiteRef">
+        <img src="assets/icon/arrow.png" [@arrow]="arrowState" class="arrow">
+    </div>
+</div>
+<div class="page" id="website" #websiteRef>
+    <div class="divider"></div>
+    <div class="secPrimaryTxt" [@slide]="fadeInStates[5]">
+        {{website}}
+    </div>
+    <div class="primary">
+        <div class="secSecondaryTxt" [@slide]="fadeInStates[6]">
+            {{website2}}
+            <br> {{website3}}
+        </div>
+    </div>
+    <div class="panelContainer" [@rotation]="panelStates[0]">
+        <div class="panel">
+            <div class="title">{{website4[this.l]}}</div>
+            <div class="pro" [@rotation]="panelElementStates[0]">
+                {{website5[this.l]}}
+                <img src="assets/icon/done.png">
+            </div>
+            <div class="pro" [@rotation]="panelElementStates[1]">
+                {{website6[this.l]}}
+                <img src="assets/icon/done.png">
+            </div>
+            <div class="pro" [@rotation]="panelElementStates[2]">
+                {{website7[this.l]}}
+                <img src="assets/icon/done.png">
+            </div>
+            <div [@slide]="fadeInStates[7]">
+                <div class="more" (click)="getMore()" [@more]="moreState" [ngx-scroll-to]="contattiRef">
+                    {{more[this.l]}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" (click)="goDown()" [@slide]="fadeInStates[8]" [ngx-scroll-to]="appRef">
+        <img src="assets/icon/arrow.png" [@arrow]="arrowState" class="arrow">
+    </div>
+</div>
+<div class="page" id="app" #appRef>
+    <div class="divider"></div>
+    <div class="secPrimaryTxt" [@slide]="fadeInStates[9]">
+        {{app}}
+    </div>
+    <div class="primary">
+        <div class="secSecondaryTxt" [@slide]="fadeInStates[10]">
+            {{app2}}
+            <br> {{app3}}
+        </div>
+    </div>
+    <div class="panelContainer" [@rotation]="panelStates[1]">
+        <div class="panel">
+            <div class="title">{{app4[this.l]}}</div>
+            <div class="pro" [@rotation]="panelElementStates[3]">
+                {{app5[this.l]}}
+                <img src="assets/icon/done.png">
+            </div>
+            <div class="pro" [@rotation]="panelElementStates[4]">
+                {{app6[this.l]}}
+                <img src="assets/icon/done.png">
+            </div>
+            <div class="pro" [@rotation]="panelElementStates[5]">
+                {{app7[this.l]}}
+                <img src="assets/icon/done.png">
+            </div>
+            <div [@slide]="fadeInStates[11]">
+                <div class="more" (click)="getMore()" [@more]="moreState" [ngx-scroll-to]="contattiRef">
+                    {{more[this.l]}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" (click)="goDown()" [@slide]="fadeInStates[12]" [ngx-scroll-to]="customRef">
+        <img src="assets/icon/arrow.png" [@arrow]="arrowState" class="arrow">
+    </div>
+</div>
+<div class="page" id="custom" #customRef>
+    <div class="divider"></div>
+    <div class="secPrimaryTxt" [@slide]="fadeInStates[13]">
+        {{custom}}
+    </div>
+    <div class="primary">
+        <div class="secSecondaryTxt" [@slide]="fadeInStates[14]">
+            {{custom2}}
+        </div>
+    </div>
+    <div class="panelContainer" [@rotation]="panelStates[2]">
+        <div class="panel">
+            <div class="title">{{custom3[this.l]}}</div>
+            <div class="section">
+                <img src="assets/icon/angular.svg" [@rotation]="panelElementStates[6]">
+                <img src="assets/icon/firebase.png " [@rotation]="panelElementStates[7]">
+                <img src="assets/icon/flutter.png " [@rotation]="panelElementStates[8]">
+            </div>
+            <div class="section">
+                <img src="assets/icon/php.svg " [@rotation]="panelElementStates[9]">
+                <img src="assets/icon/mysql1.png " [@rotation]="panelElementStates[10]">
+                <img src="assets/icon/unity.png " [@rotation]="panelElementStates[11]">
+            </div>
+            <div [@slide]="fadeInStates[15]">
+                <div class="more" (click)="getMore()" [@more]="moreState" [ngx-scroll-to]="contattiRef">
+                    {{more[this.l]}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" (click)="goDown()" [@slide]="fadeInStates[16]" [ngx-scroll-to]="contattiRef">
+        <img src="assets/icon/arrow.png" [@arrow]="arrowState" class="arrow">
+    </div>
+</div>
+<div class="page" id="contatti" #contattiRef>
+    <div class="secPrimaryTxt " [@slide]="fadeInStates[17]">
+        {{contatti}}
+    </div>
+    <div class="sec" [@slide]="fadeInStates[18]">
+        <div class="secHeader">
+            {{indirizzoH[this.l]}}
+        </div>
+        <div class="secBody">
+            <a [@rotation]="panelElementStates[12]">{{indirizzo[this.l]}}</a>
+        </div>
+    </div>
+    <div class="sec" [@slide]="fadeInStates[19]">
+        <div class="secHeader ">
+            Social
+        </div>
+        <div class="secBody ">
+            <a [@rotation]="panelElementStates[13]">+39 3394079453</a>
+            <br>
+            <a href="mailto:scaliseraoul00@email.com" target="_blank" [@rotation]="panelElementStates[14]">E-mail</a>
+            <br>
+            <a href="https://www.linkedin.com/in/raoul-scalise" target="_blank" [@rotation]="panelElementStates[15]">LinkedIn</a>
+            <br>
+            <a href="https://www.instagram.com/raoul_scalise/" target="_blank" [@rotation]="panelElementStates[16]">Instagram</a>
+            <br>
+            <a href="https://t.me/raoul_scalise" target="_blank" [@rotation]="panelElementStates[17]">Telegram</a>
+        </div>
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,69 @@
+:root {
+    --bgcolorLight: #ee5d6c;
+    --bgcolorMedium: #ce4993;
+    --bgcolorDark: #6a0d83;
+    --primary: white;
+    --secondary: black;
+}
+
+body,
+html {
+    background-color: var(--bgcolorLight);
+    margin: 0pt;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+     :root {
+        --s3: 10px;
+        --s4: 15px;
+        --s5: 25px;
+        --iconSkillSize: 40px;
+        --collaborazioneTop: 30vh;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+     :root {
+        --s3: 15px;
+        --s4: 20px;
+        --s5: 30px;
+        --iconSkillSize: 45px;
+        --collaborazioneTop: 30vh;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+     :root {
+        --s3: 20px;
+        --s4: 25px;
+        --s5: 35px;
+        --iconSkillSize: 50px;
+        --collaborazioneTop: 40vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+     :root {
+        --s3: 20px;
+        --s4: 30px;
+        --s5: 40px;
+        --iconSkillSize: 55px;
+        --collaborazioneTop: 40vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+     :root {
+        --s3: 20px;
+        --s4: 30px;
+        --s5: 40px;
+        --iconSkillSize: 60px;
+        --collaborazioneTop: 40vh;
+    }
+}

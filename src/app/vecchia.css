@@ -1,0 +1,151 @@
+
+:root {
+    --bgcolor: #371B3B; 
+    --primary: white;
+    --secondary: #A19A8C;
+}
+
+
+body, html { 
+    background-color: var(--bgcolor);
+    margin: 0pt;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+
+#title {
+    padding: 8pt;
+    color: var(--primary);
+    font-family: MontserratLight;
+    font-size: 4vw;
+}
+
+.page{
+    display: table;
+    width: 100%;
+}
+
+.page h2{
+    color: var(--primary);
+    font-family: MontserratBold;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 5vw
+}
+
+.container{
+    width: 100%;
+    margin-top: 10%;
+    height: auto;
+    display: table;
+}
+
+#presentazione{
+    height: 80%;
+}
+
+#presentazione .container div{
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 4vw;
+    color: var(--primary);
+    font-family: MontserratBold;
+}
+
+#skill{
+    height: 80%;
+}
+
+#formazione{
+}
+
+#contatti {
+    height: 10%;
+}
+
+
+#skill .section{
+    padding-top: 10%;
+    height: 30%;
+    width: 33%;
+    float: left;
+    text-align: center
+}
+
+#skill div h3 {
+    color: var(--primary);
+    margin-bottom: 10%;
+    font-size: 4vw;
+    text-align: center;
+    font-family: MontserratRegular;
+}
+
+.collaborazione {
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-top: 5%;
+    text-align: center;
+    font-size: 4vw;
+    color: var(--primary);
+    font-family: MontserratBold;
+}
+
+.iconSkill img{
+    display: inline-block;
+    margin: 5%;
+    width: 30%;
+    height: 30%;
+}
+
+.esperienza {
+    font-family: MontserratRegular;
+    color: var(--primary);
+}
+
+.el {
+    float: left;
+}
+
+.primo  {
+    margin-left: 15%;
+}
+
+.el img{
+    margin-top: 8pt;
+    width: 30pt;
+    height: 30pt;
+}
+
+.testo{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 4vw;
+}
+
+.grigio {
+    color:var(--secondary);
+}
+
+#contatti h3{
+    font-size: 4vw;
+    color: var(--primary);
+    font-family: MontserratBold
+ }
+
+ #contatti h4{
+    font-size: 4vw;
+    color: var(--secondary);
+    font-family: MontserratLight
+ }
+
+ #contatti .sec{
+    width: 50%;
+    float: left;
+    text-align: center;
+ }
