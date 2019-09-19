@@ -71,16 +71,16 @@ export class HomeComponent implements OnInit {
   l = 0;
 
   titolo = '';
-  titoloD = 'Scaliseraoul.com';
+  titoloD = '';
 
   presentazione = '';
-  presentazioneD = ['Hi, I\'m Raoul', 'Ciao, sono Raoul'];
+  presentazioneD = ['Scaliseraoul.com', 'Ciao, sono Raoul'];
 
   presentazione2 = '';
-  presentazione2D = ['Freelancer Developer', 'Sviluppatore Web e Mobile'];
+  presentazione2D = ['Affordable tailor-made web sites ', 'Sviluppatore Web e Mobile'];
 
   presentazione3 = '';
-  presentazione3D = ['from Modena, Italy', 'con sede a Modena, Italia'];
+  presentazione3D = ['built with impressive design', 'con sede a Modena, Italia'];
 
 
   websiteVisible = false;
