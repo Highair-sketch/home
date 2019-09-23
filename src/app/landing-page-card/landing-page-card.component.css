@@ -1,0 +1,93 @@
+.card {
+    display: grid;
+    font-family: MontserratBold;
+    box-shadow: 8px 8px 16px 0px rgba(238, 93, 108, 0.5);
+    border-radius: 20px;
+    background: var(--bgcolorLight);
+    grid-template-columns: 5% 20% 20% 55%;
+    grid-template-rows: 10% 40% 30% 10% 10%;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: rotateX(0deg) rotateY(10deg);
+}
+
+.header {
+    grid-column: 1 / 6;
+    background-color: white;
+    color: var(--bgcolorLight);
+    border-radius: 16px 16px 0px 0px
+}
+
+.titleHeader {
+    float: left;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.menuItem {
+    float: right;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.mainTitle {
+    grid-column: 2 / 4;
+    grid-row: 2/ 3;
+    font-size: inherit;
+    align-self: end;
+    padding: 8px;
+    font-size: 16px;
+    color: var(--primary);
+}
+
+.secondTitle {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    align-self: start;
+    padding: 8px;
+    font-size: 14px;
+    color: var(--primary);
+}
+
+.uno {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    justify-self: end;
+    align-self: start;
+}
+
+.due {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    justify-self: start;
+    align-self: start;
+}
+
+.footer {
+    background-color: white;
+    grid-column: 1 / 6;
+    grid-row: 4 / 6;
+    clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
+    border-radius: 0px 0px 16px 16px;
+    margin: -0.5px;
+}
+
+.logo {
+    grid-column: 4/5;
+    grid-row: 2/4;
+    padding: 32px;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.logoTesto {
+    text-align: center;
+    grid-column: 4/5;
+    grid-row: 2/4;
+    color: white;
+    font-size: 16px;
+    justify-self: center;
+    align-self: center;
+}

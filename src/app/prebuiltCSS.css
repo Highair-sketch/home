@@ -1,0 +1,9 @@
+@media only screen and (max-width: var(--breakpoint-xs)) {}
+
+@media only screen and (max-width: var(--breakpoint-sm)) and (min-width:var(--breakpoint-xs)) {}
+
+@media only screen and (max-width: var(--breakpoint-md)) and (min-width:var(--breakpoint-sm)) {}
+
+@media only screen and (max-width: var(--breakpoint-lg)) and (min-width:var(--breakpoint-md)) {}
+
+@media only screen and (min-width:var(--breakpoint-xl)) {}

@@ -1,27 +1,23 @@
 <html>
 <div class="top"></div>
 <div class="page" id="presentazione" #presentazioneRef>
-    <div class="header">
-        <div id="title" [@slide]="fadeInStates[0]">
-            {{titolo}}
-        </div>
-        <div id="cv" [@slide]="fadeInStates[4]" (click)="curriculum()">
-            {{cv[this.l]}}
-        </div>
-    </div>
-    <div class="secPrimaryTxt" [@slide]="fadeInStates[1]">
+    <div class="secPrimaryTxt" [@slide]="fadeInStates[0]">
         {{presentazione}}
     </div>
-    <div class="secSecondaryTxt" [@slide]="fadeInStates[2]">
+    <div class="secSecondaryTxt" [@slide]="fadeInStates[1]">
         <div>
             {{presentazione2}}
             <br> {{presentazione3}}
         </div>
     </div>
+    <div class="fromLeft10 fromBottom30 CTAButton">{{contactMeStr}}</div>
     <div class="footer" (click)="goDown()" [@slide]="fadeInStates[3]" [ngx-scroll-to]="websiteRef">
         <img src="assets/icon/arrow.png" [@arrow]="arrowState" class="arrow">
     </div>
 </div>
+<div class="parallelogram">
+</div>
+
 <div class="page" id="website" #websiteRef>
     <div class="divider"></div>
     <div class="secPrimaryTxt" [@slide]="fadeInStates[5]">

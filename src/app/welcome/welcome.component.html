@@ -1,0 +1,21 @@
+<div class="layout">
+    <div class="header montserratLight">
+        <div class="title" [@fade]="fadeInStates[0]">
+            {{title0}}
+        </div>
+    </div>
+    <div class="mainTitle" [@fade]="fadeInStates[1]">
+        {{title1}}
+    </div>
+    <div class="secondTitle " [@fade]="fadeInStates[2]">
+        {{title2}}
+    </div>
+    <div class="CTAButton uno bgPrimary txSecondary" (click)="scrollDown()" [@fade]="fadeInStates[3]">
+        Inizia ora
+    </div>
+    <div class="footer bgPrimary ">
+    </div>
+    <div class="scrollDown" (click)="scrollDown()" [@fade]="fadeInStates[4]">
+        <img src="assets/icon/arrowSecondary.png ">
+    </div>
+</div>

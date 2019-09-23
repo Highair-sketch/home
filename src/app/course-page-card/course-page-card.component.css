@@ -1,0 +1,57 @@
+ .card {
+     display: grid;
+     font-family: MontserratBold;
+     box-shadow: 8px 8px 16px 0px rgba(238, 93, 108, 0.5);
+     border-radius: 20px;
+     grid-template-rows: 10% 30% 10% 10% 20% 10% 10%;
+     transition: 0.3s;
+ }
+ 
+ .card:hover {
+     transform: rotateX(0deg) rotateY(10deg);
+ }
+ 
+ .header {
+     border-radius: 16px 16px 0px 0px
+ }
+ 
+ .titleHeader {
+     float: left;
+     padding: 8px;
+     font-size: 14px;
+ }
+ 
+ .menuItem {
+     float: right;
+     padding: 8px;
+     font-size: 12px;
+ }
+ 
+ .mainTitle {
+     grid-row: 2/ 3;
+     font-size: inherit;
+     align-self: end;
+     justify-self: center;
+     padding: 16px;
+     font-size: 16px;
+ }
+ 
+ .secondTitle {
+     grid-row: 3 / 4;
+     align-self: start;
+     justify-self: center;
+     padding: 0px 16px 0px 16px;
+     font-size: 14px;
+     text-align: center
+ }
+ 
+ .uno {
+     grid-row: 4 / 5;
+     justify-self: center;
+     align-self: center;
+ }
+ 
+ .footerTxt {
+     grid-row: 7 / 8;
+     grid-column: 1/2;
+ }

@@ -70,9 +70,6 @@ export class HomeComponent implements OnInit {
 
   l = 0;
 
-  titolo = '';
-  titoloD = '';
-
   presentazione = '';
   presentazioneD = ['Scaliseraoul.com', 'Ciao, sono Raoul'];
 
@@ -81,6 +78,7 @@ export class HomeComponent implements OnInit {
 
   presentazione3 = '';
   presentazione3D = ['built with impressive design', 'con sede a Modena, Italia'];
+  contactMeStr = 'Contact Me!';
 
 
   websiteVisible = false;
@@ -152,17 +150,11 @@ export class HomeComponent implements OnInit {
   async presentazioneAnimation() {
     await this.delay(1500, null);
     this.fadeInStates[0] = 'final';
-
-    for (const c of this.titoloD) {
-      this.titolo = this.titolo + await this.delay(40, c);
-    }
-
-    this.fadeInStates[1] = 'final';
     for (const c of this.presentazioneD[this.l]) {
       this.presentazione = this.presentazione + await this.delay(40, c);
     }
 
-    this.fadeInStates[2] = 'final';
+    this.fadeInStates[1] = 'final';
     for (const c of this.presentazione2D[this.l]) {
       this.presentazione2 = this.presentazione2 + await this.delay(20, c);
     }
@@ -171,7 +163,6 @@ export class HomeComponent implements OnInit {
     }
 
     this.fadeInStates[3] = 'final';
-    await this.delay(500, null);
     this.fadeInStates[4] = 'final';
   }
 

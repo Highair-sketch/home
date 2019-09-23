@@ -1,0 +1,19 @@
+.cardPage {
+    background-color: var(--primary);
+    display: grid;
+    grid-template-rows: auto;
+    color: var(--secondary);
+}
+
+.title {
+    font-size: var(--s5);
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.footer {
+    margin-bottom: -2px;
+    height: 20vh;
+    clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
+}

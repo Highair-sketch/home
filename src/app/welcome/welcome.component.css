@@ -1,0 +1,76 @@
+.layout {
+    height: 100%;
+    min-height: 500px;
+    display: grid;
+    font-family: MontserratBold;
+    background: var(--bgcolorLight);
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+    transition: 0.3s;
+    color: var(--primary);
+}
+
+.header {
+    grid-column: 1 / 21;
+    grid-row: 1/2;
+    padding: 8px 0px 0px 5%;
+}
+
+.title {
+    font-size: var(--s4);
+}
+
+.mainTitle {
+    grid-column: 2 / 13;
+    grid-row-start: 6;
+    font-size: var(--s5);
+    align-self: start;
+    padding: 8px;
+    color: var(--primary);
+}
+
+.secondTitle {
+    grid-column: 2 / 13;
+    grid-row-start: 9;
+    align-self: start;
+    padding: 8px;
+    font-size: var(--s4);
+    color: var(--primary);
+}
+
+.uno {
+    grid-column: 3 / 7;
+    grid-row-start: 13;
+    justify-self: center;
+    font-size: var(--s4);
+    text-align: center;
+    align-self: center;
+    vertical-align: middle;
+    padding: 8px;
+}
+
+.scrollDown {
+    z-index: 100;
+    grid-column: 1 / 21;
+    grid-row: 19 / 20;
+    justify-self: center;
+    align-self: stretch;
+}
+
+.scrollDown img {
+    display: block;
+    height: 80%;
+    width: auto;
+    transition: 0.3s
+}
+
+.scrollDown img:hover {
+    height: 60%;
+}
+
+.footer {
+    clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
+    grid-column: 1/21;
+    grid-row: 17/21;
+    margin: -1px;
+}

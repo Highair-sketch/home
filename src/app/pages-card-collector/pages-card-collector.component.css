@@ -1,0 +1,7 @@
+.pages-card-collector {
+    padding: 16px 0px 16px 0px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 16px;
+    justify-items: center;
+}

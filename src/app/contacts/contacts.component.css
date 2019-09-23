@@ -1,0 +1,63 @@
+.page {
+    height: 70vh;
+    background-color: var(--primary);
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 5vh 10vh 10vh 25vh 20vh;
+    color: var(--secondary);
+}
+
+.title {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    font-size: var(--s5);
+    align-self: center;
+    justify-self: center;
+}
+
+.section-title {
+    font-size: var(--s4);
+    font-family: MontserratRegular;
+    margin-bottom: 16px;
+}
+
+.address {
+    grid-column: 2/3;
+    grid-row-start: 4;
+    font-size: var(--s3);
+    align-self: start;
+    justify-self: center;
+    font-family: MontserratLight;
+}
+
+.social {
+    grid-column: 3/4;
+    grid-row-start: 4;
+    font-size: var(--s3);
+    align-self: start;
+    justify-self: center;
+    font-family: MontserratLight;
+}
+
+.social a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.footer {
+    grid-column: 1/5;
+    align-self: stretch;
+    justify-self: stretch;
+    grid-row: 5/6;
+    clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.copyright {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: end;
+    justify-self: start;
+    color: var(--primary);
+}

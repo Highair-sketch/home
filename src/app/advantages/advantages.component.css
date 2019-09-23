@@ -1,0 +1,63 @@
+.advantagesPage {
+    height: 100%;
+    background-color: var(--secondary);
+    display: grid;
+    grid-template-columns: 2% 32% 32% 32% 2%;
+    grid-template-rows: 5% 35% 35% 5% 20%;
+    color: var(--primary);
+}
+
+.title {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    font-size: var(--s5);
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 8px;
+}
+
+.advantage {
+    padding: 0px;
+    align-self: start;
+    justify-self: center;
+}
+
+.advantage-title {
+    font-family: MontserratBold;
+    font-size: var(--s4);
+    margin: 16px 0px 8px 0px;
+    text-align: center;
+}
+
+.advantage-description {
+    font-family: MontserratLight;
+    font-size: var(--s4);
+    text-align: center;
+}
+
+.left {
+    grid-column: 1/2;
+    grid-row: 1/6;
+}
+
+.right {
+    grid-column: 5/6;
+    grid-row: 1/6;
+}
+
+.ready {
+    grid-column: 1/6;
+    grid-row: 4/5;
+    font-size: var(--s5);
+    align-self: center;
+    justify-self: center;
+}
+
+.footer {
+    grid-column: 1/6;
+    align-self: stretch;
+    justify-self: stretch;
+    grid-row: 5/6;
+    margin: -1px;
+    clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
+}

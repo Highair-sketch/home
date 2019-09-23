@@ -297,6 +297,10 @@
     font-size: var(--s4);
 }
 
+.left {
+    margin-left: 10vw;
+}
+
 #presentazione .footer {
     bottom: 15vh;
 }
